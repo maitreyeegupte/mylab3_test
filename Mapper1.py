@@ -6,11 +6,11 @@ for line in sys.stdin:
     cite = "-"
 
     line = line.strip()
-    splits = line.split("/t")
+    splits = line.split(",")
     if len(splits) == 2:
         patent = splits[0]
     else:
         patent = splits[0]
-        location = splits[x]
+        location = splits[5]
     print '%s\t%s\t%s' % (patent,location)
         
